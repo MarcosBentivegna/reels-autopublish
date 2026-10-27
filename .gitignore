@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+
+# Project data: never commit credentials or generated media
+secrets/
+reels.toml
+output/
+state/
+tracks/

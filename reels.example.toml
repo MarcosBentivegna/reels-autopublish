@@ -1,0 +1,26 @@
+# Copy to reels.toml next to your project. Every value is optional.
+# Relative paths are resolved from the folder that holds this file.
+
+[paths]
+output_dir = "output"     # output/<YYYYMMDD>/videos/*.mp4, output/<YYYYMMDD>/carousels/<slug>/
+state_dir = "state"       # rotation state and CSV logs
+tracks_dir = "tracks"     # background music (.mp3, .m4a, .wav, .aac)
+secrets_dir = "secrets"   # credentials.json, token.json, buffer_token.txt, channels.json (gitignored)
+
+[drive]
+video_folder = "reels"
+carousel_folder = "carousels"
+public_suffixes = [".mp4", ".png", ".jpg"]
+
+[buffer]
+youtube_category_id = "22"  # People & Blogs
+
+[audio]
+fade_in = 0.3
+fade_out = 0.4
+avoid_last = 2
+
+[preflight]
+binaries = ["ffmpeg", "ffprobe"]
+min_free_gb = 2
+warn_free_gb = 10
